@@ -11,31 +11,45 @@
     <script defer src="index.js"></script>
 </head>
 <body>
-    <div class="container">
-        <div class="conbx">
+    <div class="container container-blur">
+        <div class="conBox">
             <div class="login-label">
                 <h1>로그인</h1>
                 <br/>
                 <p>신규 사용자이신가요? <a href="#">계정 만들기</a></p>
             </div>
-            <div class="inputbx">
-                <p id="mintx">이메일 주소</p>
-                <input id="input01" type="email" placeholder="이메일 주소를 입력해주세요">
+            <div class="inputBox">
+                <div class="mini-input">
+                    <p id="minTx">이메일 주소</p>
+                    <input id="input01" type="email" placeholder="이메일 주소를 입력해주세요" value="">
+                </div>
+            </div> 
+            <div class="inputBox">
+                <div class="mini-input">
+                    <p id="minTx">비밀번호</p>
+                    <input id="input02" type="password" placeholder="비밀번호를 입력해주세요" value="">
+                </div> 
+            </div> 
+            <div class="inputBox">
+                <div class="mini-input" id="flex-left" style="width: auto;">
+                    <div class="right-bx">
+                        <a href="#"><button class="conBtn">계속</button></a>
+                    </div>
+                </div>
             </div>
-            <div class="right-bx">
-                <a href="#"><button class="conbtn">계속</button></a>
-            </div>
-            <div class="line"><hr class="hrline"> 또는 <hr class="hrline"></div>
-            <br>
-            <a href="#"><button class="sociallogin" id="google">
+        </div>
+        <div class="line"><hr class="hrLine"> 또는 <hr class="hrLine"></div>
+        <div class="inputBox">
+            <a href="#"><button class="socialLogin" id="google">
                 <i class="fa fa-google"></i>
                 Google로 계속
             </button></a>
             <br>
-            <a href="#"><button class="sociallogin" id="facebook">
+            <a href="#"><button class="socialLogin" id="facebook">
                 <i class="fa fa-facebook"></i>
                 Facebook으로 계속
             </button></a>
+        </div>
         </div>
     </div>
 </body>
