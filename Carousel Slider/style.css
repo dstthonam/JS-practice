@@ -1,0 +1,36 @@
+/* 전역 속성 */
+.container {
+    width: 300vw;
+    display: flex;
+    transition: transform 0.7s;
+}
+
+/* box styles */
+.box01, .box02, .box03 {
+    width: 100%;
+    min-height: 1280px;
+    background-position: center;
+    background-size: cover;
+}
+
+.box01 {
+    background-image: url("./img/bg1.jpg");
+}
+.box02 {
+    background-image: url("./img/bg2.jpg");
+}
+.box03 {
+    background-image: url("./img/bg3.jpg");
+}
+
+
+/* btn 속성 */
+.btnBox {
+    padding: 20px;
+    margin: 20px;
+}
+
+.btn01, .btn02, .btn03 {
+    width: 100px;
+    height: 100px;
+}
