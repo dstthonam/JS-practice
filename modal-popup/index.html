@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>modal-popup</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./reset.css">
+    <script defer src="./index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- 모달 창 만들기 -->
+    <div class="container">
+        <div class="modal-btn-box">
+            <button type="button" id="modal-open"> 모달 창 열기 </button>
+        </div>
+        
+        <div class="popup-wrap" id="popup">
+            <div class="popup">
+                <div class="body-contentbox">
+                    <p>입력하실 제품의 이름을 입력하세요</p>
+                    <br>
+                    <input type="text" placeholder="검색어 입력">
+                    <p>본인에게 해당 제품의 적합여부를 입력하세요</p>
+                </div>
+                <div class="popup-foot">
+                    <span class="pop-btn confirm" id="confirm">적합</span>
+                    <span class="pop-btn close" id="close">부적합</span>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+</body>
+</html>

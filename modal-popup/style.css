@@ -1,0 +1,58 @@
+
+/* popup css */
+.popup-wrap{
+    background-color:rgba(0,0,0,0.65); /* 마지막 숫자로 배경 투명도 조절 */
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    display: flex;
+    flex-direction: column;
+    display:none; /* 버튼 클릭을 통해 팝업창을 열기 위해 처음에 숨김 */
+    padding:15px;
+}
+.popup{
+    width:100%;
+    max-width:450px;
+    border-radius:10px;
+    overflow:hidden; /* radius로 인해 내부가 밖으로 나오는걸 방지 */
+    background-color:#ffffff;
+    box-shadow: 5px 10px 10px 1px rgba(0,0,0,.3);
+    margin:auto;
+}
+.body-contentbox{
+    word-break:break-all;
+    overflow-y:auto;
+    min-height:100px;
+    max-height:300px;
+    text-align:center;
+    padding: 20px 50px;
+}
+.body-contentbox > input {
+    font-size:1em;
+    width:180px;
+    height:30px;
+    margin-right:5px;
+    margin: 20px;
+}
+
+/* popup-foot btn css */
+.pop-btn{
+    display:inline-flex;
+    width:50%;
+    height:100%;
+    float:left;
+    justify-content:center;
+    align-items:center;
+    color:#000000;
+    cursor:pointer;
+    border-top:1px solid #000000;
+}
+.pop-btn.confirm{
+    border-right:1px solid #000000;
+}
+.popup-foot{
+    width:100%;
+    height:50px;
+}
